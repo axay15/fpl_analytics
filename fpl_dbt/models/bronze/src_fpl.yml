@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: fpl_bronze
+    tables:
+      - name: bronze_players
+        meta:
+          external_location: "../data/bronze/bronze_players/**/*.parquet"
+
+      - name: bronze_teams
+        meta:
+          external_location: "../data/bronze/bronze_teams/**/*.parquet"
+
+      - name: bronze_fixtures
+        meta:
+          external_location: "../data/bronze/bronze_fixtures/**/*.parquet"
+
+      - name: bronze_player_gameweek
+        meta:
+          external_location: "../data/bronze/bronze_player_gameweek/**/*.parquet"

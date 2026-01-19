@@ -1,0 +1,7 @@
+fpl_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: ../duckdb/fpl.duckdb
+      threads: 4

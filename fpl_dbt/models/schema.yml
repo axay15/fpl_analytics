@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: silver_players
+    tests:
+      - not_null:
+          column_name: player_id
+
+  - name: silver_player_gameweek
+    tests:
+      - not_null:
+          column_name: player_id
+      - not_null:
+          column_name: gameweek
+
+  - name: fact_player_performance
+    tests:
+      - unique:
+          column_name: "player_id || '-' || gameweek"
