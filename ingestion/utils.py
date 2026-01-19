@@ -16,14 +16,20 @@ def write_parquet(
     ingestion_date: str,
     gameweek: int | None = None
 ):
-    path = output_dir / table_name / f"season={season}" / f"ingestion_date={ingestion_date}"
+    # Base path without ingestion_date
+    path = output_dir / table_name / f"season={season}"
 
     if gameweek is not None:
         path = path / f"gameweek={gameweek}"
+
+    # 🔥 IMPORTANT: remove existing files for idempotency
+    if path.exists():
+        for file in path.glob("*.parquet"):
+            file.unlink()
 
     path.mkdir(parents=True, exist_ok=True)
 
     file_path = path / f"{table_name}.parquet"
     df.to_parquet(file_path, index=False)
 
-    print(f"✅ Wrote {file_path}")
+    print(f"♻️ Overwrote {file_path}")
