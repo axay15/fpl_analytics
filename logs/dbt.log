@@ -1,0 +1,31 @@
+[0m00:23:17.538568 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ee3700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a1294b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a1290c0>]}
+
+
+============================== 00:23:17.562210 | 98d0d4ca-921b-452a-801a-6344ef637002 ==============================
+[0m00:23:17.562210 [info ] [MainThread]: Running with dbt=1.11.2
+[0m00:23:17.562650 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'target_path': 'None', 'cache_selected_only': 'False', 'empty': 'None', 'static_parser': 'True', 'fail_fast': 'False', 'partial_parse': 'True', 'version_check': 'True', 'no_print': 'None', 'introspect': 'True', 'quiet': 'False', 'indirect_selection': 'eager', 'debug': 'False', 'warn_error': 'None', 'write_json': 'True', 'profiles_dir': '/Users/axay/.dbt', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'use_colors': 'True', 'log_path': 'logs', 'use_experimental_parser': 'False', 'invocation_command': 'dbt init fpl_dbt'}
+[0m00:23:17.599887 [info ] [MainThread]: Creating dbt configuration folder at /Users/axay/.dbt
+[0m00:23:17.601770 [debug] [MainThread]: Starter project path: /Users/axay/Documents/Data_Engineering/Projects/fpl-data-platform/fpl/lib/python3.10/site-packages/dbt/include/starter_project
+[0m00:23:17.606918 [info ] [MainThread]: 
+Your new dbt project "fpl_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m00:23:17.607274 [info ] [MainThread]: Setting up your profile.
+[0m00:24:16.154258 [info ] [MainThread]: Profile fpl_dbt written to /Users/axay/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m00:24:16.470412 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 58.996273, "process_in_blocks": "0", "process_kernel_time": 0.564641, "process_mem_max_rss": "149258240", "process_out_blocks": "0", "process_user_time": 1.926417}
+[0m00:24:16.470934 [debug] [MainThread]: Command `dbt init` succeeded at 00:24:16.470858 after 59.00 seconds
+[0m00:24:16.471244 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ee3700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076f7fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118972080>]}
+[0m00:24:16.471549 [debug] [MainThread]: Flushing usage events
+[0m00:24:17.026289 [debug] [MainThread]: An error was encountered while trying to flush usage events
