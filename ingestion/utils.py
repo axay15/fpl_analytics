@@ -32,4 +32,4 @@ def write_parquet(
     file_path = path / f"{table_name}.parquet"
     df.to_parquet(file_path, index=False)
 
-    print(f"♻️ Overwrote {file_path}")
+    print(f"✅ Wrote {file_path}")
